@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: url("../images/main_bg.jpg") repeat-x scroll left top #4396CA;
+	font-family: "Arial";
+	color: #000;
+	text-decoration: none;
+}
+
+h1{ font-size:24px;color:#FFF;}
+
+.logo{width:220px;}
+
+#picture{
+	border:1px solid; 
+	background-color:#FFF;
+	overflow: hidden;
+}
+
+.picture{
+	width:460px;
+	height:600px;
+}
+
+.button{ width:60px;}
+
+.attention{color:#F00;}
+
+#imageFace{
+	background:url("../images/faces/Face_3.jpg") no-repeat bottom;
+	background-size:100%;
+	z-index:-1;
+}
+
+.accessories{
+	display:inline-block;
+	margin:10px;
+}
+
+.instructions{
+	font-size:18px;
+}
+
+.center{text-align:center;}
+
+
+
+/*MENU*/
+.submenu{
+	background-color:#8ec33e;
+	/*display:none;*/
+	border: 2px solid #4d4d4d;
+	border-radius:5px;
+}
+.menuitem{
+	display:inline-block;
+	margin-left:10px;
+	width:60px;
+	height:60px;
+	background-color:#FFF;
+}
+#menu_1{
+	background:url("../images/ico_glasses.png") no-repeat;
+	background-size:100%;
+}
+#menu_2{
+	background:url("../images/ico_beards.png") no-repeat;
+	background-size:100%;
+}
+#menu_3{
+	background:url("../images/ico_hats.png") no-repeat;
+	background-size:100%;
+}
+/*GLASSES*/
+.glasses{
+	z-index:1;
+	width:200px;
+	height:70px;
+	background-color:#FFF;
+}
+#glasses_1{
+	background:url("../images/accessories/GLASSES_1.png") no-repeat;
+	background-size:100%;
+}
+#glasses_2{
+	background:url("../images/accessories/GLASSES_2.png") no-repeat;
+	background-size:100%;
+}
+#glasses_3{
+	background:url("../images/accessories/GLASSES_3.png") no-repeat;
+	background-size:100%;
+}
+/*BEARDS*/
+.beards{
+	z-index:2;
+	width:110px;
+	height:150px;
+	background-color:#FFF;
+}
+#beards_1{
+	background:url("../images/accessories/BEARD_1.png") no-repeat;
+	background-size:100%;
+}
+#beards_2{
+	background:url("../images/accessories/BEARD_2.png") no-repeat;
+	background-size:100%;
+}
+#beards_3{
+	background:url("../images/accessories/BEARD_3.png") no-repeat;
+	background-size:100%;
+}
+#beards_4{
+	background:url("../images/accessories/BEARD_4.png") no-repeat;
+	background-size:100%;
+}
+/*HATS*/
+.hats{
+	z-index:3;
+	width:110px;
+	height:120px;
+	background-color:#FFF;
+}
+#hats_1{
+	background:url("../images/accessories/HAT_1.png") no-repeat;
+	background-size:100%;
+}
+#hats_2{
+	background:url("../images/accessories/HAT_2.png") no-repeat;
+	background-size:100%;
+}
+#hats_3{
+	background:url("../images/accessories/HAT_3.png") no-repeat;
+	background-size:100%;
+}
+#hats_4{
+	background:url("../images/accessories/HAT_4.png") no-repeat;
+	background-size:100%;
+}

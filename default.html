@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Funny Face 2015</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/party.css" />
+<link rel="stylesheet" href="css/drop.css" />
+</head>
+<body>
+
+<div class="container_12">
+  <div class="grid_3">
+    <img src="images/LOGO_FunnyFace.png" alt="Funny Face 2015" class="logo"/>
+  </div>
+  <div class="grid_9 center">
+    <p class="instructions">Play with the available acessories in your face.</p>
+        <div id="menu_1" class="menuitem" title="Glasses"></div>
+        <div id="menu_2" class="menuitem" title="Beards"></div>
+        <div id="menu_3" class="menuitem" title="Hats"></div>
+  </div>
+  <div class="clear"></div>
+
+  <div class="grid_12 submenu center">
+	<div id="glasses_1" class="glasses accessories"></div>
+    <div id="glasses_2" class="glasses accessories"></div>
+    <div id="glasses_3" class="glasses accessories"></div>
+  </div>
+
+  <div class="grid_12 submenu center">
+	<div id="beards_1" class="beards accessories"></div>
+    <div id="beards_2" class="beards accessories"></div>
+    <div id="beards_3" class="beards accessories"></div>
+    <div id="beards_4" class="beards accessories"></div>
+  </div>
+
+  <div class="grid_12 submenu center">
+	  <div id="hats_1" onclick = "hats(1)" class="hats accessories"></div>
+    <div id="hats_2" onclick = "hats(2)" class="hats accessories"></div>
+    <div id="hats_3" onclick = "hats(3)" class="hats accessories"></div>
+    <div id="hats_4" onclick = "hats(4)" class="hats accessories"></div>
+  </div>
+  <div class="clear"></div>
+
+  <!-- drop -->
+
+  <form id="DropFileForm" action="" method="post"
+    ondragover="preventDefaults(event)"
+    ondragenter="preventDefaults(event)"
+    ondragleave="preventDefaults(event)"
+    ondrop="preventDefaults(event)"
+  >
+    <label for="fileInput" id="fileLabel">
+      Перетащите файл сюда!!!
+    </label>
+  </form>
+  
+
+  <div class="grid_2 prefix_3 suffix_2 center">Size</div>
+  <div class="grid_2 suffix_3 center">Move</div>
+  <div class="clear"></div>
+
+  <div class="grid_1 prefix_3"><button id="plus" class="button" onclick="hat.w+=20;hat.h+=20;drawHats(hat)">+</button></div>
+  <div class="grid_1 suffix_2"><button id="minus" class="button" onclick="hat.w-=20;hat.h-=20;drawHats(hat)">-</button></div>
+  <div class="grid_1"><button id="left" class="button" onclick="hat.x-=10;drawHats(hat)">Left</button></div>
+  <div class="grid_1 suffix_3"><button id="right" class="button" onclick="hat.x+=10;drawHats(hat)">Right</button></div>
+
+  <div class="grid_2 prefix_3 suffix_2 center">Rotate</div>  <div class="clear"></div>
+  <div class="grid_1 prefix_3"><button id="plus" class="button" onclick="hat.rotate+=20;drawHats(hat)">Left</button></div>
+  <div class="grid_1 suffix_2"><button id="minus" class="button" onclick="hat.rotate-=20;drawHats(hat)">Right</button></div>
+  <div class="grid_1"><button id="right" class="b<button id="right" class="button" onclick="hat.y-=10;drawHats(hat)">Up</button></div>
+  <div class="grid_1 suffix_3"><button id="right" class="b<button id="right" class="button" onclick="hat.y+=10;drawHats(hat)">Down</button></div>
+
+
+  <div class="clear"></div>
+
+  <div class="grid_6 prefix_3 suffix_3"></div>
+		<!-- <div id="picture" class="picture"></div> -->
+    <canvas id="canvas" width="460px" height="600px" ></canvas>
+  
+  <div class="clear"></div>
+  
+  <div class="grid_4 prefix_4 suffix_4 center">
+    <p><button id="save" class="button" onClick="javascript:savePicture();">Save Picture</button></p>
+  </div>
+  <div class="clear"></div>
+  <div class="grid_12">
+    <p>
+      Funny Face - 43º WorldSkills Competition - São Paulo - 2015. All rights reserved.
+    </p>
+  </div>
+  <div class="clear"></div>
+  <script src="script.js"></script>
+</body>
+</html>

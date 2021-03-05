@@ -1,0 +1,19 @@
+.highlight{
+    background-color:rgb(126, 201, 194) !important;
+    border:4px dashed red !important;
+}
+#DropFileForm{
+    margin: 0 auto;
+    width:500px;
+    height: 100px;
+    background-color: rgb(79, 221, 79);
+    border: 4px dashed black;
+    border-radius: 20px;
+    text-align: center;
+    font-size: large;
+}
+#canvas{
+    background-color: silver;
+    margin: 0 auto; 
+    display: block;
+}
